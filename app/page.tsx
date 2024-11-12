@@ -7,19 +7,19 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center">
         <ul className="list-inside text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
+            <code className="bg-black/[.05] dark:bg-white/[.06] overline hover:no-underline px-1 py-0.5 rounded font-semibold">
               The website is currently under construction!
             </code>
           </li>
 
           <li className="mb-2">
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
+            <code className="bg-black/[.05] dark:bg-white/[.06] overline hover:no-underline px-1 py-0.5 rounded font-semibold">
               A new and improved version will be live soon.
             </code>
           </li>
 
           <li>
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
+            <code className="bg-black/[.05] dark:bg-white/[.06] overline hover:no-underline px-1 py-0.5 rounded font-semibold">
               Stay tuned for updates!
             </code>
           </li>
