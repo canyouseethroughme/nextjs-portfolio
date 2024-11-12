@@ -29,7 +29,7 @@ export default function Home() {
 
       <footer className="row-start-3 flex gap-8 flex-wrap items-center justify-center">
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          className="flex items-center hover:underline hover:underline-offset-4"
           href="https://github.com/canyouseethroughme"
           target="_blank"
           rel="noopener noreferrer"
@@ -47,7 +47,7 @@ export default function Home() {
         </a>
 
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          className="flex items-center hover:underline hover:underline-offset-4"
           href="https://www.linkedin.com/in/stefandrei/"
           target="_blank"
           rel="noopener noreferrer"
@@ -65,7 +65,7 @@ export default function Home() {
         </a>
 
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          className="flex items-center hover:underline hover:underline-offset-4"
           href="https://twitter.com/itstefandrei"
           target="_blank"
           rel="noopener noreferrer"
