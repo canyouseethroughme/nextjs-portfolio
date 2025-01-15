@@ -1,21 +1,15 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["700"],
+})
 
 export const metadata: Metadata = {
-  title: "Andrei Stefan",
-  description: "Portfolio Website for Andrei Stefan, Frontend Engineer",
+  title: "Stefan Andrei",
+  description: "Portfolio Website for Stefan Andrei, Software Engineer with a passion for Frontend Development.",
 };
 
 export default function RootLayout({
@@ -26,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${outfit.className} antialiased`}
       >
         {children}
       </body>
