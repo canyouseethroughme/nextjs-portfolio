@@ -14,12 +14,14 @@ export default function Home() {
   return (
     <main className="flex flex-col h-screen sm:flex-row">
       <div className="w-full h-1/2 sm:w-1/2 sm:h-full relative overflow-hidden">
-        <div className="">
+        <div className="inset-0 w-full h-full">
           <Image
-            src="/me.jpg"
-            alt="Decorative image"
-            layout="fill"
-            objectFit="cover"
+            src="/stefan_andrei.jpg"
+            alt="Stefan Andrei - portrait photo"
+            width={1012}
+            height={1018}
+            priority
+            className="object-cover inset-0 w-full h-full"
           />
         </div>
       </div>
