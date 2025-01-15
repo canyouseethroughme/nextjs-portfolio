@@ -6,7 +6,6 @@ const links = [
   { href: 'https://www.linkedin.com/in/stefandrei/', label: 'linkedin' },
   { href: 'https://twitter.com/itstefandrei', label: 'twitter' },
   { href: '/', label: 'blog (work in progress)' },
-  { href: '/cv.pdf', label: 'resume' },
 ]
 
 export default function Home() {
@@ -33,10 +32,17 @@ export default function Home() {
             href={link.href}
             className="text-5xl font-bold hover:text-yellow-300 hover:underline transition-colors"
             target="_blank"
+            rel="noopener noreferrer"
           >
             {link.label}
           </Link>
         ))}
+        <a href='/cv.pdf'
+          className="text-5xl font-bold hover:text-yellow-300 hover:underline transition-colors"
+          target="_blank"
+          rel="noopener noreferrer">
+          resume
+        </a>
       </div>
     </main>
   );
