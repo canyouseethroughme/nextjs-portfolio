@@ -37,6 +37,7 @@ export default function Home() {
             {link.label}
           </Link>
         ))}
+        {/* expose resume through anchor tag because Link component is designed to handle navigation within the apps route */}
         <a href='/cv.pdf'
           className="text-5xl font-bold hover:text-yellow-300 hover:underline transition-colors"
           target="_blank"
