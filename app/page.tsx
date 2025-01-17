@@ -9,7 +9,6 @@ const links = [
 ]
 
 export default function Home() {
-
   return (
     <main className="flex flex-col h-screen sm:flex-row">
       <div className="w-full h-1/2 sm:w-1/2 sm:h-full relative overflow-hidden">
@@ -27,10 +26,18 @@ export default function Home() {
 
       <div className="w-full h-1/2 sm:w-1/2 sm:h-full flex flex-col justify-around sm:justify-center items-center sm:items-start p-4 sm:p-8 space-y-0 sm:space-y-4">
         {links.map((link) => (
+           // TODO: remove conditional style once blog is ready
           <Link
             key={link.href}
             href={link.href}
-            className="text-5xl font-bold hover:text-yellow-300 hover:underline transition-colors"
+            className={`
+              text-3xl
+              sm:text-5xl 
+              font-bold 
+              hover:text-yellow-300 
+              transition-colors
+              ${!link.label.includes('blog') && 'hover:underline'} 
+               ${link.label.includes('blog') && 'line-through'}`}
             target={`${link.href === '/blog' ? '_self' : '_blank'}`}
             rel="noopener noreferrer"
           >
@@ -39,7 +46,7 @@ export default function Home() {
         ))}
         {/* expose resume through anchor tag because Link component is designed to handle navigation within the apps route */}
         <a href='/cv.pdf'
-          className="text-5xl font-bold hover:text-yellow-300 hover:underline transition-colors"
+          className="text-3xl sm:text-5xl font-bold hover:text-yellow-300 hover:underline transition-colors"
           target="_blank"
           rel="noopener noreferrer">
           resume
