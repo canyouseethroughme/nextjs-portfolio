@@ -14,6 +14,7 @@ export default async function Blog() {
                 width={article.img.width}
                 height={article.img.height}
                 priority
+                unoptimized
             />
             <h2>{article.createdAt}</h2>
         </div>

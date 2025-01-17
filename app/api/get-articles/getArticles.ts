@@ -43,6 +43,6 @@ export async function getArticles(): Promise<Article[]> {
     });
 
     const data = await response.json();
-    return data.data.articles
+    return data.data.articles.reverse()
 
 }
