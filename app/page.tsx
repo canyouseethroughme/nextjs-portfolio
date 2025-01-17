@@ -31,7 +31,7 @@ export default function Home() {
             key={link.href}
             href={link.href}
             className="text-5xl font-bold hover:text-yellow-300 hover:underline transition-colors"
-            target="_blank"
+            target={`${link.href === '/blog' ? '_self' : '_blank'}`}
             rel="noopener noreferrer"
           >
             {link.label}
