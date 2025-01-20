@@ -24,7 +24,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full h-1/2 sm:w-1/2 sm:h-full flex flex-col justify-around sm:justify-center items-center sm:items-start p-4 sm:p-8 space-y-0 sm:space-y-4">
+      <div className="w-full h-1/2 sm:w-1/2 sm:h-full flex flex-col justify-around sm:justify-center items-center sm:items-start p-8 sm:space-y-4">
         {links.map((link) => (
           <Link
             key={link.href}
