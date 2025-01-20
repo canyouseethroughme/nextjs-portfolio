@@ -5,7 +5,7 @@ const links = [
   { href: 'https://github.com/canyouseethroughme', label: 'github' },
   { href: 'https://www.linkedin.com/in/stefandrei/', label: 'linkedin' },
   { href: 'https://twitter.com/itstefandrei', label: 'twitter' },
-  { href: '/', label: 'blog (w.i.p.)' },
+  // { href: '/blog', label: 'blog' },
 ]
 
 export default function Home() {
@@ -26,19 +26,11 @@ export default function Home() {
 
       <div className="w-full h-1/2 sm:w-1/2 sm:h-full flex flex-col justify-around sm:justify-center items-center sm:items-start p-4 sm:p-8 space-y-0 sm:space-y-4">
         {links.map((link) => (
-           // TODO: remove conditional style once blog is ready
           <Link
             key={link.href}
             href={link.href}
-            className={`
-              text-3xl
-              sm:text-5xl 
-              font-bold 
-              hover:text-yellow-300 
-              transition-colors
-              ${!link.label.includes('blog') && 'hover:underline'} 
-               ${link.label.includes('blog') && 'line-through'}`}
-            target={`${link.href === '/blog' ? '_self' : '_blank'}`}
+            className="text-3xl sm:text-5xl font-bold hover:text-yellow-300 transition-colors hover:underline"
+            target="_blank"
             rel="noopener noreferrer"
           >
             {link.label}
