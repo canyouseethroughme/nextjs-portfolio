@@ -20,6 +20,7 @@ export async function getArticles(): Promise<Article[]> {
 
     const response = await fetch(endpoint, {
         method: "POST",
+        cache: "no-cache",
         headers: {
             "Content-Type": "application/json",
         },
