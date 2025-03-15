@@ -10,10 +10,10 @@ export default async function Blog() {
         const { time, date } = formatDateTime(article.createdAt);
         return (
             <div key={article.id} >
-                <h1 className="text-3xl font-extrabold leading-none w-[40rem] text-center pb-6">{article.title}</h1>
+                <h1 className="text-l sm:text-3xl font-extrabold leading-none w-[12rem] sm:w-[40rem] sm:text-center pb-6">{article.title}</h1>
                 <Link href={`/blog/${article.id}`} target="_blank">
                     <Image
-                        className="object-cover w-[40rem] pb-2 transition-opacity duration-300 hover:opacity-60"
+                        className="object-fill sm:object-cover w-64 sm:w-[40rem] pb-2 transition-opacity duration-300 hover:opacity-60"
                         src={article.img.url}
                         alt={article.title}
                         width={article.img.width}
@@ -23,7 +23,7 @@ export default async function Blog() {
                     />
                 </Link>
 
-                <h2>Posted on {date} @ {time}</h2>
+                <h2 className="text-xs sm:text-m">Posted on {date} @ {time}</h2>
             </div>
         )
     })
