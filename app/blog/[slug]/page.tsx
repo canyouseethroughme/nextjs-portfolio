@@ -31,7 +31,7 @@ export default async function Page({
                 unoptimized
             />
 
-            <h2 className="text-xs sm:text-m pb-6">Posted on {date} @ {time}</h2>
+            <h2 className="text-xs sm:text-m pb-6 text-zinc-400">Posted on {date} @ {time}</h2>
 
             <div className="sm:w-[40rem] pb-6 dangerouslySetAnchorTags" dangerouslySetInnerHTML={{ __html: article.text.html || "" }} />
 

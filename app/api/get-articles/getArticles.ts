@@ -5,7 +5,7 @@ export async function getArticles(skip: number = 0, first: number = 10): Promise
     if (!endpoint) {
         throw new Error("NEXT_HYGRAPH_ENDPOINT is not defined");
     }
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    // await new Promise((resolve) => setTimeout(resolve, 1000));
 
     const response = await fetch(endpoint, {
         method: "POST",
