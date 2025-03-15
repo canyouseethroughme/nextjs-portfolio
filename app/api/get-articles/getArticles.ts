@@ -1,23 +1,11 @@
-export type Article = {
-    id: string;
-    title: string;
-    createdAt: string;
-    img: {
-        url: string;
-        width: number;
-        height: number;
-    };
-    text: {
-        raw: string;
-    };
-}
+import { Article } from "../get-article/getArticle";
 
-export async function getArticles(): Promise<Article[]> {
+export async function getArticles(skip: number = 0, first: number = 10): Promise<Article[]> {
     const endpoint = process.env.NEXT_HYGRAPH_ENDPOINT;
     if (!endpoint) {
         throw new Error("NEXT_HYGRAPH_ENDPOINT is not defined");
     }
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
     const response = await fetch(endpoint, {
         method: "POST",
@@ -27,7 +15,7 @@ export async function getArticles(): Promise<Article[]> {
         },
         body: JSON.stringify({
             query: `query Articles {
-                            articles {
+                            articles(skip: ${skip}, first: ${first}) {
                                 id
                                 title
                                 createdAt
@@ -37,7 +25,7 @@ export async function getArticles(): Promise<Article[]> {
                                     height
                                 }
                                 text {
-                                    raw
+                                    html
                                 }
                             }
                         }`,

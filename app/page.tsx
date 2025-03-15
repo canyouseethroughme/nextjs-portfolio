@@ -5,7 +5,7 @@ const links = [
   { href: 'https://github.com/canyouseethroughme', label: 'github' },
   { href: 'https://www.linkedin.com/in/stefandrei/', label: 'linkedin' },
   { href: 'https://twitter.com/itstefandrei', label: 'twitter' },
-  // { href: '/blog', label: 'blog' },
+  { href: '/blog', label: 'blog' },
 ]
 
 export default function Home() {

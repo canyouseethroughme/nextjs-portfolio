@@ -1,11 +1,11 @@
-import { Skeleton } from "../ui/components/Skeleton";
+import { BlogSkeleton } from "../ui/components/BlogSkeleton";
 
 export default function Loading() {
     return (
         <>
-            <Skeleton />
-            <Skeleton />
-            <Skeleton />
+            <BlogSkeleton />
+            <BlogSkeleton />
+            <BlogSkeleton />
         </>
     )
 }
