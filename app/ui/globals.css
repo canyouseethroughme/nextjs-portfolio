@@ -13,7 +13,7 @@ body {
 }
 
 .dangerouslySetAnchorTags {
- p > a {
+ a {
     color: var(--foreground);
     text-decoration: none;
     font-size: 1.25rem;

@@ -32,10 +32,10 @@ export default async function Page({
 
             {article.link &&
                 <Link
-                    className="text-xl font-bold hover:text-yellow-300 hover:underline"
+                    className="text-m sm:text-xl font-bold hover:text-yellow-300 hover:underline"
                     href={article.link}
                     target="_blank">
-                    Read more
+                    read more
                 </Link>
             }
         </div>
