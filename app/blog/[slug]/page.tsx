@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image"
 import { formatDateTime } from "@/app/utils/utils";
 
+import BackButton from "@/app/ui/components/BackButton";
+
 export default async function Page({
     params,
 }: {
@@ -11,9 +13,12 @@ export default async function Page({
     const { slug } = await params
     const article = await getArticle(slug)
     const { time, date } = formatDateTime(article.createdAt);
+    
 
     return (
         <div key={article.id} className="p-2 sm:p-0">
+            <BackButton/>
+
             <h1 className="text-xl sm:text-3xl font-extrabold leading-none sm:w-[40rem] sm:text-center sm pb-6">{article.title}</h1>
 
             <Image

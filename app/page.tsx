@@ -30,8 +30,6 @@ export default function Home() {
             key={link.href}
             href={link.href}
             className="text-3xl sm:text-5xl font-bold hover:text-yellow-300 transition-colors hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             {link.label}
           </Link>

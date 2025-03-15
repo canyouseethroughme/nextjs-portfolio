@@ -6,7 +6,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <>
       <div className="mt-16 mb-16 sm:mt-32 sm:mb-32 grid gap-12 sm:gap-24 grid place-content-center">
 
-        <div className="bg-zinc-800 fixed top-0 pl-8 pr-8 h-12 sm:h-16 w-[100vw]">
+        <div className="bg-zinc-800 fixed top-0 pl-2 pr-2 sm:pl-8 sm:pr-8 h-12 sm:h-16 w-[100vw]">
           <div className="flex justify-self-center h-full items-center justify-between w-full max-w-[2048px]">
             <Link href="/">
               <Image
