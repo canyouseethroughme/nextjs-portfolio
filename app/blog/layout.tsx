@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               />
             </Link>
 
-            <Link className="text-xl sm:text-3xl font-bold text-zinc-400 hover:text-yellow-300 transition-colors hover:underline" href="/">
+            <Link className="text-xl sm:text-2xl font-bold text-zinc-400 hover:text-yellow-300 transition-colors hover:underline" href="/">
               home
             </Link>
           </div>

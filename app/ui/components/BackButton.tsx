@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 function BackButton() {
     const router = useRouter();
     return (
-        <button className="text-m sm:text-xl font-bold hover:text-yellow-300 transition-colors hover:underline mb-4" onClick={() => router.back()}>
+        <button className="text-m sm:text-xl font-bold text-zinc-500 hover:text-yellow-300 transition-colors hover:underline mb-4" onClick={() => router.back()}>
             {"<"} go back
         </button>
     );
