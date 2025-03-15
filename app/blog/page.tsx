@@ -9,11 +9,11 @@ export default async function Blog() {
     return articles?.map((article) => {
         const { time, date } = formatDateTime(article.createdAt);
         return (
-            <div key={article.id} >
-                <h1 className="text-l sm:text-3xl font-extrabold leading-none w-[12rem] sm:w-[40rem] sm:text-center pb-6">{article.title}</h1>
+            <div key={article.id} className="p-2 sm:p-0">
+                <h1 className="text-l sm:text-3xl font-extrabold leading-none sm:w-[40rem] sm:text-center pb-6">{article.title}</h1>
                 <Link href={`/blog/${article.id}`} target="_blank">
                     <Image
-                        className="object-fill sm:object-cover w-64 sm:w-[40rem] pb-2 transition-opacity duration-300 hover:opacity-60"
+                        className="object-fill sm:object-cover sm:w-[40rem] pb-2 transition-opacity duration-300 hover:opacity-60"
                         src={article.img.url}
                         alt={article.title}
                         width={article.img.width}

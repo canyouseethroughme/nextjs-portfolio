@@ -13,11 +13,11 @@ export default async function Page({
     const { time, date } = formatDateTime(article.createdAt);
 
     return (
-        <div key={article.id}>
-            <h1 className="text-xl sm:text-3xl font-extrabold leading-none w-[12rem] sm:w-[40rem] sm:text-center pb-6">{article.title}</h1>
+        <div key={article.id} className="p-2 sm:p-0">
+            <h1 className="text-xl sm:text-3xl font-extrabold leading-none sm:w-[40rem] sm:text-center sm pb-6">{article.title}</h1>
 
             <Image
-                className="object-fill sm:object-cover w-64 sm:w-[40rem] pb-2"
+                className="object-fill sm:object-cover sm:w-[40rem] pb-2"
                 src={article.img.url}
                 alt={article.title}
                 width={article.img.width}
@@ -28,7 +28,7 @@ export default async function Page({
 
             <h2 className="text-xs sm:text-m pb-6">Posted on {date} @ {time}</h2>
 
-            <div className="w-[12rem] sm:w-[40rem] pb-6 dangerouslySetAnchorTags" dangerouslySetInnerHTML={{ __html: article.text.html || "" }} />
+            <div className="sm:w-[40rem] pb-6 dangerouslySetAnchorTags" dangerouslySetInnerHTML={{ __html: article.text.html || "" }} />
 
             {article.link &&
                 <Link
