@@ -1,6 +1,6 @@
 export const BlogSkeleton = () => {
     return (
-        <div className="p-2 sm:p-0">
+        <div className="p-2 sm:p-0 border-b-[1px] border-neutral-700">
             <div className={`animate-pulse rounded-lg bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 w-[65vw] sm:w-[40rem] sm:h-12 mb-6`}>
                 <div className="invisible">Loading...</div>
             </div>

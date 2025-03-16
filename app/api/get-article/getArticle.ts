@@ -22,7 +22,7 @@ export async function getArticle(id: string): Promise<Article> {
 
     const response = await fetch(endpoint, {
         method: "POST",
-        cache: "no-cache",
+        cache: "force-cache",
         headers: {
             "Content-Type": "application/json",
         },
