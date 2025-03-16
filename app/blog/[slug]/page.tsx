@@ -19,7 +19,7 @@ export default async function Page({
         <div key={article.id} className="p-2 sm:p-0">
             <BackButton/>
 
-            <h1 className="text-xl sm:text-3xl font-extrabold leading-none sm:w-[40rem] sm:text-center sm pb-6">{article.title}</h1>
+            <h1 className="text-xl sm:text-3xl font-extrabold leading-none sm:w-[40rem] sm:text-center mb-8 sm:mb-12">{article.title}</h1>
 
             <Image
                 className="object-fill sm:object-cover sm:w-[40rem] pb-2"
@@ -31,9 +31,9 @@ export default async function Page({
                 unoptimized
             />
 
-            <h2 className="text-xs sm:text-m pb-6 text-zinc-400">Posted on {date} @ {time}</h2>
+            <h2 className="text-xs sm:text-m mb-8 sm:mb-12 text-zinc-400">Posted on {date} @ {time}</h2>
 
-            <div className="sm:w-[40rem] pb-6 dangerouslySetAnchorTags" dangerouslySetInnerHTML={{ __html: article.text.html || "" }} />
+            <div className="sm:w-[40rem] mb-8 sm:mb-12 dangerouslySetAnchorTags" dangerouslySetInnerHTML={{ __html: article.text.html || "" }} />
 
             {article.link &&
                 <Link
