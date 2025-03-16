@@ -26,7 +26,7 @@ export default async function Blog() {
                 <h2 className="text-xs sm:text-m text-zinc-400">Posted on {date} @ {time}</h2>
 
                 <div className="text-center pt-2 pb-2 sm:pb-4">
-                    <Link className="text-m sm:text-xl font-bold hover:text-yellow-300 transition-colors hover:underline" href={`/blog/${article.id}`}>read more</Link>
+                    <Link className="text-m sm:text-xl font-bold hover:text-yellow-300 transition-colors hover:underline" scroll={false} href={`/blog/${article.id}`}>read more</Link>
                 </div>
             </div>
         )
