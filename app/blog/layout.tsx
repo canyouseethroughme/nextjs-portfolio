@@ -19,8 +19,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               />
             </Link>
 
-            <Link className="text-xl sm:text-2xl font-bold text-zinc-500 hover:text-yellow-300 transition-colors hover:underline" href="/">
-              home
+            <Link className="text-l sm:text-xl font-bold text-zinc-500 hover:text-yellow-300 transition-colors hover:underline" href="/">
+              stefan andrei
             </Link>
           </div>
 
