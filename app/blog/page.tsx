@@ -2,9 +2,13 @@ import Image from "next/image"
 import { getArticles } from "@/app/api/get-articles/getArticles"
 import Link from "next/link"
 import { formatDateTime } from "../utils/utils"
+import { getArticlesCount } from "../api/get-articles-count/getArticlesCount"
 
 export default async function Blog() {
     const articles = await getArticles()
+    const articlesCount = await getArticlesCount()
+    console.log(articlesCount.count);
+
 
     return articles?.map((article) => {
         const { time, date } = formatDateTime(article.createdAt);
