@@ -15,7 +15,7 @@ export async function getArticles(skip: number = 0): Promise<Article[]> {
         },
         body: JSON.stringify({
             query: `query Articles {
-                            articles(orderBy: createdAt_DESC, skip: ${skip}) {
+                            articles(orderBy: createdAt_DESC, skip: ${skip}, first: 100) {
                                 id
                                 title
                                 createdAt

@@ -7,7 +7,7 @@ import { getArticlesCount } from "../api/get-articles-count/getArticlesCount"
 export default async function Blog() {
     const articles = await getArticles()
     const articlesCount = await getArticlesCount()
-    console.log(articlesCount.count);
+    console.log(articlesCount);
 
 
     return articles?.map((article) => {
