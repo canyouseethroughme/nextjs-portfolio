@@ -12,8 +12,7 @@ export default async function Page({
 }) {
     const { slug } = await params
     const article = await getArticle(slug)
-    const { time, date } = formatDateTime(article.createdAt);
-    
+    const { time, date } = formatDateTime(article.createdAt)
 
     return (
         <div key={article.id} className="p-2 sm:p-0">
