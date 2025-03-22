@@ -19,7 +19,7 @@ export default function Home() {
             width={1012}
             height={1018}
             priority
-            className="object-cover inset-0 w-full h-full animate-fadeIn grayscale blur-md hover:blur-none hover:grayscale-0"
+            className="object-cover inset-0 w-full h-full animate-fadeIn grayscale xl:blur-md hover:blur-none hover:grayscale-0"
           />
         </div>
       </div>
