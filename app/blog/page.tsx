@@ -17,7 +17,7 @@ export default async function Blog() {
                 <h1 className="text-xl sm:text-3xl font-extrabold leading-none sm:w-[40rem] sm:text-center pb-6">{article.title}</h1>
                 <Link scroll={true} href={`/blog/${article.id}`}>
                     <Image
-                        className="object-fill grayscale animate-fadeIn hover:grayscale-0 sm:object-cover sm:w-[40rem] pb-2"
+                        className="object-fill grayscale hover:grayscale-0 sm:object-cover sm:w-[40rem] pb-2"
                         src={article.img.url}
                         alt={article.title}
                         width={article.img.width}
