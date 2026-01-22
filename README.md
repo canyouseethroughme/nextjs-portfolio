@@ -6,7 +6,7 @@ Feel free to explore the code, run it locally, or use it as inspiration for your
 
 ### Getting started
 - Clone the repository
-- Install dependencies `yarn`
+- Install dependencies `npm i`
 - Create `.env` file in the project root
 - Log in to Hygraph, copy the High Performance Content API endpoint (this is only for me, as you don't have access to it), and add it to the `.env` file `NEXT_HYGRAPH_ENDPOINT=endpoint_here`
-- Start the local development server `yarn dev`
+- Start the local development server `npm run dev`
